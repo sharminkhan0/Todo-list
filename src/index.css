@@ -39,19 +39,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; 
+  width: 100%;
 }
-  
+
 input {
   border-color: transparent;
   padding: 0.7em;
   outline: none;
-  }
+}
 
 .input-task {
   width: 90%;
   position: relative;
-  
 }
 
 .input-field {
@@ -112,12 +111,12 @@ input {
   width: 100%;
   padding: 0.5em;
 }
-  
+
 .clear-completed:hover {
   background: rgb(104, 104, 106);
   color: #f6f6f6;
 }
-  
+
 .task i {
   margin-left: auto;
 }
