@@ -1,4 +1,4 @@
-// drag and drop functionality  
+// drag and drop functionality
 import { tasks, storeTasksToLocalStorage, sortTasks } from './taskFunctions.js';
 
 const dragStart = (event) => {
