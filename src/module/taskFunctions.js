@@ -1,4 +1,4 @@
-//taskfunctionality
+// taskfunctionality
 const tasks = JSON.parse(localStorage.getItem('Tasks')) || [];
 
 const storeTasksToLocalStorage = () => {

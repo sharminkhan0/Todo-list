@@ -1,4 +1,4 @@
-//clear task functionality
+// clear task functionality  
 import { tasks, storeTasksToLocalStorage } from './taskFunctions.js';
 
 const clearAllCompletedTasks = () => {
