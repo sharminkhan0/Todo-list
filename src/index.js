@@ -36,19 +36,13 @@ const tasks = [
 
 ];
 
-
-
-
 export default class DisplayTasks {
-
   static renderTasks() {
-
     tasks.sort((a, b) => a.index - b.index);
 
     taskListContainer.innerHTML = '';
 
     tasks.forEach((task, index) => {
-
       taskListContainer.innerHTML += `
 
         <li class="task" draggable="true" data-index="${index}">
@@ -66,18 +60,10 @@ export default class DisplayTasks {
         </li>
 
       `;
-
     });
-
   }
-
 }
 
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
-
   DisplayTasks.renderTasks();
-
 });
