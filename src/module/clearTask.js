@@ -1,4 +1,4 @@
-// cleare task functionality  
+// cleare task functionality
 
 import { tasks, storeTasksToLocalStorage } from './taskFunctions.js';
 

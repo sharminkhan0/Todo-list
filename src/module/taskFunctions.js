@@ -1,4 +1,4 @@
-// taskFunctions.js functionality  
+// taskFunctions.js functionality
 
 const tasks = JSON.parse(localStorage.getItem('Tasks')) || [];
 

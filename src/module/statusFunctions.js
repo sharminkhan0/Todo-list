@@ -1,4 +1,4 @@
-// statusUpdates.js finctionality  
+// statusUpdates.js finctionality
 
 import { tasks, storeTasksToLocalStorage } from './taskFunctions.js';
 
