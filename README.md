@@ -74,7 +74,7 @@ The goal of this project is to create a basic HTML list of to-do items. The list
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]( https://sharminkhan0.github.io/  /)
+- [Live Demo Link]( https://sharminkhan0.github.io/Todo-list/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
