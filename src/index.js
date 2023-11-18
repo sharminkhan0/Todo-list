@@ -21,8 +21,7 @@ const displayTasks = () => {
           <input type="checkbox" name="${task.description}" ${task.completed ? 'checked' : ''}>
           <input type="text" value="${task.description}" readonly>
         </div>
-        <i class="fas fa-ellipsis-vertical" data-index="${index}"></i>
-      </li>
+        <i class="fas fa-ellipsis-vertical menu" data-index="${index}"></i>
     `;
   });
 
@@ -57,7 +56,7 @@ const displayTasks = () => {
       textInput.readOnly = false;
       if (task.querySelector('.fa-ellipsis-vertical')) {
         const ellipsisIcon = task.querySelector('.fa-ellipsis-vertical');
-        ellipsisIcon.classList.remove('fa-ellipsis-vertical');
+        ellipsisIcon.classList.remove('fa-ellipsis-vertical, .task-menu');
         ellipsisIcon.classList.add('fa-trash');
         ellipsisIcon.addEventListener('click', () => {
           deleteTask(index);
@@ -130,4 +129,4 @@ document.querySelector('.rotate-icon').addEventListener('click', refreshPage);
 // Add event listener to update the display
 document.addEventListener('updateDisplay', displayTasks);
 
-export {};
+export { };
