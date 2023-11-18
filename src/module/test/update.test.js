@@ -1,7 +1,7 @@
 import updateStatus from '../statusFunctions.js';
 import { tasks } from '../taskFunctions.js';
 
-describe ('updateStatus', () => {
+describe('updateStatus', () => {
   beforeEach(() => {
     global.localStorage = {
       getItem: jest.fn(() => JSON.stringify(tasks)),
@@ -26,19 +26,20 @@ describe ('updateStatus', () => {
     updateStatus(index, newCompletedStatus);
 
     expect(tasks[index].completed).toBe(newCompletedStatus);
-});
-test('should update the tasks in localStorage', () => {
-  const index = 1;
-  const newCompletedStatus = true;
+  });
 
-  updateStatus(index, newCompletedStatus);
+  test('should update the tasks in localStorage', () => {
+    const index = 1;
+    const newCompletedStatus = true;
 
-  expect(localStorage.setItem).toHaveBeenCalledWith(
-    'Tasks',
-    JSON.stringify([
-      { description: 'Task 1', completed: false, index: 1 },
-      { description: 'Task 2', completed: newCompletedStatus, index: 2 },
-    ]),
-  );
-});
+    updateStatus(index, newCompletedStatus);
+
+    expect(localStorage.setItem).toHaveBeenCalledWith(
+      'Tasks',
+      JSON.stringify([
+        { description: 'Task 1', completed: false, index: 1 },
+        { description: 'Task 2', completed: newCompletedStatus, index: 2 },
+      ]),
+    );
+  });
 });
