@@ -6,8 +6,6 @@ const storeTasksToLocalStorage = () => {
   localStorage.setItem('Tasks', JSON.stringify(tasks));
 };
 
-
-
 const sortTasks = () => {
   tasks.forEach((task, index) => {
     task.index = index + 1;
