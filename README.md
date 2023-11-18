@@ -42,7 +42,7 @@
 The goal of this project is to create a basic HTML list of to-do items. The list will be formatted in accordance with the guidelines provided in the course. A webpack dev server will be used to build and serve this straightforward web page.
 
 
-<img src="./resources/images/Screenshot 2023-09-10 015137.png" alt="cover" />
+<img src="./resources/images/Screenshot todo-list 2023-11-08 013317.png" alt="cover" />
 
 ## 🛠 Built With <a name="built-with"></a>
 
