@@ -3,7 +3,7 @@
   --secondary: #c5c9e9;
   --primary-rgb: 255, 204, 128;
   --secondary-rgb: 128, 201, 255;
-  --dark-violet: 111,45,168;
+  --dark-violet: 111, 45, 168;
 }
 
 html,
@@ -65,8 +65,7 @@ body {
 
 .todo-app-container:hover {
   border: #ca33f8;
-  box-shadow: -3px 3px 30px 10px rgb(247, 247, 199), -3px 3px 30px 10px rgba(29, 249, 212, 0.521);
-  /*transform: translateY(-17px);*/
+  box-shadow: -3px 3px 30px 10px #f7f7c7, -3px 3px 30px 10px rgba(29, 249, 212, 0.521);
 }
 
 input {
@@ -149,7 +148,7 @@ input {
   background: rgb(var(--dark-violet), 0.8);
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  border-bottom-left-radius: none;
+  border-bottom-left-radius: 0;
   color: #cecece;
   letter-spacing: 0.8rem;
 }
@@ -161,48 +160,3 @@ input {
 .fa-ellipsis-vertical:hover {
   cursor: move;
 }
-
-/*-------------*/
-
-i {
-  font-size: 0.9em;
-  color: #f61d05;
-  cursor: pointer;
-}
-
-
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  display: flex;
-  padding: 1em;
-  gap: 0.5em;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-
-
-.task-menu {
-  display: flex;
-  align-items: flex-end;
-  border: 1px solid #a1003582;
-  border-radius: 5px;
-  right: 32%;
-  background-color: #d09ef6;
-  box-shadow: 0 15px 10px -11px black;
-  padding: 1em 0.5em;
-  margin-top: 3em;
-  position: absolute;
-  font-size: 1.2em;
-}
-
-.task-menu li {
-  padding: 0 0.5em;
-  position: relative;
-}
-
